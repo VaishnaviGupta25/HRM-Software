@@ -1,0 +1,134 @@
+/* Basic Styling for the Payroll Container */
+.payroll-container {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f4f7fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Remove the horizontal scroll */
+  overflow-x: hidden;
+}
+
+/* Search bar styling */
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.search-bar:focus {
+  outline: none;
+  border-color: #007bff;
+}
+/* Styling the Payroll Details Container */
+.payroll-details-container {
+  /* Removed overflow-y: auto; to prevent internal scrolling */
+  width: 100%; /* Ensure container takes full width */
+  margin-top: 20px;
+  padding-bottom: 20px; /* Prevents extra space at the bottom */
+}
+
+/* Table Styling */
+.payroll-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  table-layout: fixed; /* Prevent horizontal overflow */
+  max-height: 500px; /* Ensure table is scrollable when content exceeds height */
+  overflow-y: auto; /* Adds vertical scroll to the table */
+}
+
+.payroll-table th, .payroll-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  word-wrap: break-word; /* Prevents content from overflowing */
+  overflow: hidden;
+}
+
+.payroll-table th {
+  background-color: #007bff;
+  color: #fff;
+  font-size: 13px;
+}
+
+.payroll-table td {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Input field styling inside the table */
+.payroll-table input[type="number"],
+.payroll-table input[type="date"] {
+  width: 100%;
+  padding: 8px;
+  font-size: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.payroll-table input[type="number"]:focus,
+.payroll-table input[type="date"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Button Styling */
+.save-btn {
+  padding: 8px 16px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.save-btn:hover {
+  background-color: #218838;
+}
+
+.save-btn:focus {
+  outline: none;
+}
+
+/* Add a hover effect to rows in the table */
+.payroll-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .payroll-table th, .payroll-table td {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+
+  .payroll-table input[type="number"],
+  .payroll-table input[type="date"] {
+    font-size: 0.8rem;
+  }
+
+  .save-btn {
+    font-size: 0.8rem;
+  }
+
+  /* Prevent horizontal scroll on small screens */
+  .payroll-details-container {
+    overflow-x: hidden;
+  }
+
+  .payroll-table {
+    table-layout: auto; /* Auto layout for better responsiveness */
+  }
+}

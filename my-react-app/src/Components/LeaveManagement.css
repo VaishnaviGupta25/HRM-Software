@@ -1,0 +1,62 @@
+/* Leave Management Container */
+.leave-management-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Heading */
+.leave-management-container h2 {
+  color: #2d3b52;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Leave Requests Table */
+.leave-requests table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.leave-requests th, .leave-requests td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.leave-requests th {
+  background-color: #f8f9fa;
+  color: #007bff;
+}
+
+.leave-requests button {
+  padding: 8px 12px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.leave-requests button:hover {
+  background-color: #28a745;
+}
+
+.leave-requests button:nth-child(2) {
+  background-color: #dc3545;
+}
+
+.leave-requests button:nth-child(2):hover {
+  background-color: #c82333;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  font-size: 18px;
+}

@@ -1,0 +1,88 @@
+/* Superpayroll.css */
+
+body {
+  background-color: #cce0ff;
+  font-family: Arial, sans-serif;
+}
+
+.hr-payroll-container {
+  max-width: 95%; /* Full width ke kareeb le aaya */
+  margin: 50px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow-x: auto; /* Ensure responsiveness */
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.search-bar {
+  width: 60%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.hr-payroll-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+/* Increase width of the entire table */
+.hr-payroll-table th,
+.hr-payroll-table td {
+  padding: 12px 15px;
+}
+
+/* Ensure Actions column is within the box */
+th:nth-child(9),
+td:nth-child(9) {
+  width: 150px; /* Thoda aur width diya */
+}
+
+/* Input fields alignment */
+input[type="number"],
+input[type="date"] {
+  width: 95%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Save button alignment */
+.save-btn {
+  width: 100px;
+  padding: 8px;
+  margin: 5px auto;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.save-btn:hover {
+  opacity: 0.8;
+}

@@ -1,0 +1,114 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Main Container with overflow hidden */
+  .main-container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; /* Prevent overflow beyond this container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cfe2ff; /* Optional background */
+  }
+  
+  /* Super Admin Login Container */
+  .superadmin-login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+    padding: 30px;
+    background:#ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    max-width: 400px;
+    margin: 20px;
+    backdrop-filter: blur(10px);
+  }
+  
+  /* Heading */
+  .superadmin-login-container h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 28px;
+  font-family: 'Arial', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  }
+  
+  /* Form Group */
+  .form-group {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  /* Input Fields */
+  .form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .form-group input:focus {
+    border-color: #333;
+    /* box-shadow: 0 0 8px rgba(255, 117, 140, 0.5); */
+    outline: none;
+  }
+  
+  /* Login Button */
+  .btn-login {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(to right, #3f85bf, #759cff);
+    color: white;
+    cursor: pointer;
+  }
+  
+  .btn-login:hover {
+    box-shadow: 0 4px 10px rgba(255, 117, 140, 0.5);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .superadmin-login-container {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .superadmin-login-container h2 {
+      font-size: 28px;
+    }
+  
+    .form-group input {
+      font-size: 14px;
+    }
+  
+    .btn-login {
+      font-size: 16px;
+    }
+  }
+  

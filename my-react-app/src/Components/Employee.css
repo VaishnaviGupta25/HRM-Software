@@ -1,0 +1,114 @@
+/* Basic Styling for the Employee Container */
+.employee-container {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f4f7fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Remove the horizontal scroll */
+  overflow-x: hidden;
+}
+
+/* Search bar styling */
+.employee-search-bar {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.employee-search-bar:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Styling the Employee Details Container */
+.employee-details-container {
+  /* Removed overflow-y: auto; to prevent internal scrolling */
+  width: 100%; /* Ensure container takes full width */
+  margin-top: 20px;
+  padding-bottom: 20px; /* Prevents extra space at the bottom */
+}
+
+/* Table Styling */
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  table-layout: fixed; /* Prevent horizontal overflow */
+  max-height: 500px; /* Ensure table is scrollable when content exceeds height */
+  overflow-y: auto; /* Adds vertical scroll to the table */
+}
+
+.employee-table th, .employee-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  word-wrap: break-word; /* Prevents content from overflowing */
+  overflow: hidden;
+}
+
+.employee-table th {
+  background-color: #007bff;
+  color: #fff;
+  font-size: 13px;
+}
+
+.employee-table td {
+  font-size: 13px;
+  color: #333;
+}
+
+/* Button Styling */
+.delete-btn {
+  padding: 4px 8px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+.delete-btn:focus {
+  outline: none;
+}
+
+/* Add a hover effect to rows in the table */
+.employee-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .employee-table th, .employee-table td {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .delete-btn {
+    font-size: 7px;
+  }
+
+  /* Prevent horizontal scroll on small screens */
+  .employee-details-container {
+    overflow-x: hidden;
+  }
+
+  .employee-table {
+    table-layout: auto; /* Auto layout for better responsiveness */
+  }
+}
