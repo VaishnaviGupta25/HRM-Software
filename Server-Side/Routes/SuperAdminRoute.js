@@ -19,7 +19,7 @@ console.log("req body log",req.body)
     const collection = db.collection("superadmin");
      console.log("collection log",collection)
     const superAdmin = await collection.findOne({ email });
-     console.log("superadmin log",superadmin)
+     console.log("superAdmin log",superAdmin)
 
     // if (!superAdmin) {
     //   return res.status(401).json({ Status: false, Error: "Invalid credentials" });
