@@ -11,17 +11,19 @@ const router = express.Router();
 router.post("/superadminlogin", async (req, res) => {
   try {
     const { email, password } = req.body;
-
+console.log("req body log",req.body)
     if (!email || !password) {
       return res.status(400).json({ Status: false, Error: "Email and password are required" });
     }
 
     const collection = db.collection("superadmin");
+     console.log("collection log",collection)
     const superAdmin = await collection.findOne({ email });
+     console.log("superadmin log",superadmin)
 
-    if (!superAdmin) {
-      return res.status(401).json({ Status: false, Error: "Invalid credentials" });
-    }
+    // if (!superAdmin) {
+    //   return res.status(401).json({ Status: false, Error: "Invalid credentials" });
+    // }
 
     const isPasswordValid = await bcrypt.compare(password, superAdmin.password);
     if (!isPasswordValid) {
