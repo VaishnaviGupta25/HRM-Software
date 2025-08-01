@@ -28,7 +28,7 @@ connectToDatabase()
 // // Middleware setup
 app.use(
   cors({
-    origin: ["https://hrms.blackgrapesgroup.com", "http://localhost:5173"], 
+    origin: ["https://hrms.blackgrapesgroup.com","https://hrm-software-kappa.vercel.app", "http://localhost:5173"], 
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })  
